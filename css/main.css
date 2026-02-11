@@ -72,7 +72,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 250px;
-    height: 300px;
+    height: 290px;
     transition: all 0.3s ease;
     margin-left: 20px;
     margin-right: 30px;
@@ -85,17 +85,58 @@ body{
     transform: scale(1.03);
 }
 
+.imagemoment {
+    position: relative;
+}
+
 .imagemoment img {
     border-radius: 40px;
     padding: 2px;
     width: 248px;
     height: 248px;
     transition: all 0.3s ease;
+    margin: 0;
 }
 
 .imagemoment img:hover{
     border: 1px solid white;
     transform: scale(1.03);
 }
+
+.namemoment {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.datecreate{
+    display: flex;
+}
+
+.datecreate p {
+    color: white;
+    font-size: 12px;
+    opacity: 50%;
+    margin-left: 100px;
+}
+
+.like {
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+}
+
+.like #like, 
+.comment #comment {
+    color: white;
+    font-size: 30px;
+}
+
+.comment {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+}
+
 
 
