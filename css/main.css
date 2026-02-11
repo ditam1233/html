@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(#161616, #303030);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: transparent; 
+    padding: 0; 
+}
+
+.main-menu {
+    background: #1F1F1F;
+    padding: 30px 30px 20px 30px;
+    text-align: center;
+    border-radius: 30px;
+    width: 90vw;
+    max-width: 280px; 
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.login-text{
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: white;
+    text-decoration: overline;
+    font-weight: 600;
+    text-shadow: 1px 1px 10px black;
+}
+
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-name input,
+.form-mail input,
+.form-password input {
+    border: 2px solid transparent;
+    padding: 8px 0;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    background: #2A2A2A;
+    box-shadow: 2px 2px 5px #151515;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.form-password input{
+    margin: 0;
+}
+
+input:focus{
+    box-shadow: 0px 0px 7px #9600bf;
+}
+
+.forgot {
+    width: 100%;
+    text-align: right;
+    margin-top: 5px;  
+}
+
+.forgot a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    opacity: 50%;
+}
+
+.forgot a:hover {
+    color: #de8bf5;
+    text-decoration:underline;
+    opacity: 100%;
+    transition: all 0.3s ease;
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn button{
+    color: white;
+    background: #9600bf;
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 5px 5px 20px black;
+    opacity: 90%;
+}
+
+.btn button:hover {
+    background: #7900bf;
+    transition: all 0.5s ease;
+    transform: scale(1.05) perspective(200px);
+    cursor: pointer;
+}
+
+.create {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.create a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    opacity: 50%;
+}
+
+.create a:hover{
+    color: #de8bf5;
+    text-decoration:underline;
+    opacity: 100%;
+    transition: all 0.3s ease;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#useravatar{
+    font-size: 100px !important;
+    background: #9600bf;
+    color: #fff;
+    margin-top: -35%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 15px black;
+    opacity: 90%;
+}
+
+.mailicon,
+.lockicon,
+.nameicon {
+    display: flex;
+    position: absolute;
+    margin: 4px;
+    margin-left: 10px;
+}
+
+#mailicon,
+#lockicon,
+#nameicon {
+    color: white;
+    font-size: 29px;
+}
+
+.form-mail:focus-within #mailicon,
+.form-password:focus-within #lockicon,
+.form-name:focus-within #nameicon {
+    color: #9600bf; /* Твой фирменный фиолетовый */
+    scale: 0.8;
+    transition: color 0.5s ease; /* Плавная смена цвета */
+}
